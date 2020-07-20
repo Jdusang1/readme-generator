@@ -44,7 +44,7 @@ const questions = [{
     type: "list",
     message: "What license type of license is used?",
     name: "license",
-    choices: ["Apache License 2.0", "GNU GPLv3", "MIT", "ISC License"]
+    choices: ["Apache License 2.0 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)", "GNU GPLv3 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)", "MIT [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)", "ISC License [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)"]
 }, {
     type: "input",
     message: "What is your contact email?",
@@ -57,21 +57,7 @@ const questions = [{
 },
 
 ];
-function badgeSelection() {
-    let badge = badgeSelection
-    if (questions.data[7] === [0]) {
-        return badge;
 
-    } else if (questions.data[7] === [1]) {
-        return badge;
-
-    } else if (questions.data[7] === [2]) {
-        return badge;
-
-    } else if (questions.data[7] === [3]) {
-        return badge;
-    }
-}
 
 // function to write README file
 function writeToFile(fileName, data) {
@@ -94,7 +80,7 @@ function init() {
 
 // function call to initialize program
 init();
-badgeSelection();
+// badgeSelection();
 
 
 

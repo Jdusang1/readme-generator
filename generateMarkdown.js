@@ -1,5 +1,6 @@
 function generateMarkdown(data) {
   return `![GitHub] 
+  https://img.shields.io/badge/license-${data.license}-blue.svg
   
   # ${data.title} 
     
@@ -27,7 +28,7 @@ function generateMarkdown(data) {
     ${data.collaborators}
 
   ## Licensing
-    This project is covered by a ${data.license}
+    This project is covered by a (https://opensource.org/licenses/${data.license})
   
   ## Tests
     ${data.tests}
@@ -35,7 +36,8 @@ function generateMarkdown(data) {
   ## Questions
     
   https://github.com/${data.github}
-    ${data.email}`
+    
+  ${data.email}`
 
     ;
 
